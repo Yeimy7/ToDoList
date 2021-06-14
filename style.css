@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    min-width: 500px;
+}
+
+.wrapper_top {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #EBB563;
+}
+
+h1 {
+    font-size: 30px;
+    padding: 25px;
+    color: white;
+}
+
+input {
+    padding: 10px;
+    width: 250px;
+    height: 30px;
+    margin-bottom: 20px;
+    position: relative;
+    outline: none;
+}
+
+button {
+    display: inline-block;
+    border: 1px solid black;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #9E7333;
+}
+
+ul {
+    position: relative;
+}
+
+li {
+    position: relative;
+    list-style: none;
+    padding: 15px 30px;
+    color: white;
+    background-color: #9B4BEB;
+    border-bottom: 1px solid #dddddd;
+    cursor: pointer;
+}
+li:hover{
+    background-color: #6C3A9E;
+}
+ul li.checked{
+    background-color: #6C3A9E;
+    color: white;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0px 2px 2px 0px;
+    top: 16px;
+    left: 12px;
+    transform: rotate(45deg);
+    height: 10px;
+    width: 5px;
+}
+
+.close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+li .close:hover{
+    background-color: #EB7063;
+    color: white;
+}
